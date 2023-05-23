@@ -1,2 +1,2 @@
-mensaje="hola gente, preparense para ser jakiados"
+mensaje="hola gente, preparense para ser jackiados"
 print(mensaje)
