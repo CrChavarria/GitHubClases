@@ -1,0 +1,32 @@
+import random
+import numpy as np
+resultado_impares = 0
+contador_pares = 0
+lista=[]
+print (lista)
+x = range(10)
+#opcion A
+for n in x:
+    numero_aleatorio = random.randint(0,1000)
+    lista.append(numero_aleatorio)
+
+arreglo = np.array(lista)
+print(lista)
+#lista tiene comas entre los resultados
+print(arreglo.sum)
+#arreglo no tiene comas en tre los resultados
+
+#si el %2 del elemento de el arreglo es == 0 es par, si es == 1 impar
+largo_arreglo = len(arreglo)
+for i in range (largo_arreglo):
+    if arreglo[i] %2 == 1:
+        print(f"{arreglo[i]} El numero es impar")
+        resultado_impares = resultado_impares + arreglo[i]
+    if arreglo[i] %2 == 0:
+        print(f"{arreglo[i]} El numero es par")
+        contador_pares = contador_pares +1 
+
+
+print
+print (f"el resultado de los numeros impares es {resultado_impares}")
+print (f"hay {contador_pares} numeros pares")
